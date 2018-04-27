@@ -174,7 +174,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1116515845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2002950894}
@@ -192,6 +192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ab5655b957d4773b8205280abed92c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ProjectilePrefab: {fileID: 1064045826229934, guid: 29bbb3f1cad824aebb40fbbce8dc29d9,
+    type: 2}
   LeftKey: 276
   RightKey: 275
   UpKey: 273
@@ -352,7 +354,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2002950893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.31, y: 0.22, z: 0}
+  m_LocalPosition: {x: 0.08, y: 0.22, z: 0}
   m_LocalScale: {x: 1.3869462, y: 1.3228769, z: 1}
   m_Children: []
   m_Father: {fileID: 1116515846}

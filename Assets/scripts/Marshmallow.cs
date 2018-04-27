@@ -38,4 +38,10 @@ public class Marshmallow : MonoBehaviour {
 			MarshmallowMgr.inst.Unregister (this);
 		}
 	}
+
+	public void HandleProjectileImpact() {
+		Destroy (gameObject);
+	}
+
+
 }

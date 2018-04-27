@@ -17,6 +17,8 @@ public class Dragon : MonoBehaviour {
 		}
 	}
 
+	public GameObject ProjectilePrefab;
+
 	public KeyCode LeftKey;
 	public KeyCode RightKey;
 	public KeyCode UpKey;
@@ -32,18 +34,19 @@ public class Dragon : MonoBehaviour {
 	void Update () {
 		MovementLogic ();
 		CurrentDragonPosition = transform.position;
+		FiringLogic ();
 	}
 
 	void MovementLogic () {
 		Vector3 speed = Vector3.zero;
 
-		if (CurrentDragonPosition.x > -1.8f) {
+		if (CurrentDragonPosition.x > -8.2f) {
 			if (Input.GetKey (LeftKey)) {
 				speed.x = -5;
 			}
 		}
 
-		if (CurrentDragonPosition.x < 13.2f) {
+		if (CurrentDragonPosition.x < 8.1f) {
 			if (Input.GetKey (RightKey)) {
 				speed.x = 5;
 			}
@@ -64,6 +67,13 @@ public class Dragon : MonoBehaviour {
 
 
 		transform.position = transform.position + speed * Time.deltaTime;
+	}
+
+	void FiringLogic() {
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			GameObject projectile = (GameObject)Instantiate (ProjectilePrefab);
+			projectile.transform.position = transform.position;
+		}
 	}
 
 
