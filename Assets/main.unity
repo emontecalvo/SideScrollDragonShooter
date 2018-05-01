@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c4c19278b4c49e6a5e13c59ceb632a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MarshmallowPrefab: {fileID: 114867451772110200, guid: 4cd7f3ee6a52f431ba59e2ed8347f1e7,
+    type: 2}
   AllMarshmallows: []
 --- !u!4 &81634349
 Transform:
@@ -349,11 +351,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4351627870221206, guid: 4cd7f3ee6a52f431ba59e2ed8347f1e7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.52
+      value: 8.49
       objectReference: {fileID: 0}
     - target: {fileID: 4351627870221206, guid: 4cd7f3ee6a52f431ba59e2ed8347f1e7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 4351627870221206, guid: 4cd7f3ee6a52f431ba59e2ed8347f1e7, type: 2}
       propertyPath: m_LocalPosition.z

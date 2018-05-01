@@ -47,7 +47,7 @@ public class Projectile : MonoBehaviour {
 			}
 		}
 
-		if (transform.position.y > 8) {
+		if (transform.position.x > 8.5) {
 			Destroy (gameObject);
 		}
 	}
