@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MarshmallowMgr : MonoBehaviour {
 
@@ -25,11 +26,17 @@ public class MarshmallowMgr : MonoBehaviour {
 
 	}
 
+	public Text MyScoreText;
+
 	public void Unregister (Marshmallow marshmallow) {
 		AllMarshmallows.Remove (marshmallow);
+		int myScore = int.Parse (MyScoreText.text);
+		myScore += 1;
+		MyScoreText.text = myScore.ToString ();
 	}
 
 	void Start () {
+		MyScoreText.text = "0";
 		float xpos = 9.77f;
 
 		for (int i = 0; i < 10; i++) {
